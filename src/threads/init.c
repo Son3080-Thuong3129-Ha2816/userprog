@@ -133,7 +133,8 @@ main (void)
   run_actions (argv);
 
   /* Finish up. */
-  shutdown ();
+  timer_msleep(3000);
+  shutdown_power_off ();      
   thread_exit ();
 }
 
